@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Raleway&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 100px;
+    background-image:url(https://sites.georgetown.edu/medicine/wp-content/uploads/sites/63/2019/02/thyrod.jpg) ;
+    backdrop-filter: blur(3px);
+    color:yellow;
+    font-size: large;
+    font-family: 'Bree Serif', serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+.result-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid black;
+    padding: 0px 20px;
+    padding-bottom: 300px;
+    font-size: medium;
+    text-shadow: 5px 5px 4px #000000;
+    font-weight: 500;
+
+
+}
+
+#resultComp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    color:white;
+    font-size:18px;
+    padding-left: 2px;
+
+}
+
+h3 {
+    background-color: black;
+    padding: 10px 400px;
+    text-align: center;
+}
+
+h4 {
+    text-decoration: underline;
+    
+}
+
+#alertTxt {
+    font-size: 20px;
+}
+
+#negativePara {
+    font-size: 25px;
+}
+
+ul {
+    list-style-type:circle;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}

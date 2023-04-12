@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <script src="./static/resul2.js"></script>
+    <link rel="stylesheet" href="./static/result_style.css">
+</head>
+<body>
+        <div class="result-container">
+            <div>
+            <h3> Test Result : {{Thyroid_Text}} </h3>
+            <h4 id="resultNo" result = {{result_no}} ></h4>
+            <p id="end-card" style="visibility: hidden;"></p>
+            <center><p id="alertTxt"></p></center>
+            
+            </div>
+        <div id="resultComp" >
+            <div class="result-card"  >
+                <h4>Medication:</h4>
+                <p id="med1" > </p>
+                <p id="med2" > </p>
+                <p id="med3" > </p>
+            </div>
+           <div class="result-card" >
+            <h4 >Diet:</h4>
+            <p id="diet1"></p>
+            <p id="diet2"></p>
+            <p id="diet3"></p>
+           </div>
+           <div class="result-card">
+            <h4>Exercises:</h4>
+            <p id="ex"></p>
+           </div>
+
+           <div id="negativePara" style="visibility: hidden;" >
+            <p>But following these precautions, you can get away from the thyroidism:</p>
+            <ul>
+                <li>Eat a healthy, balanced diet</li>
+                <li>Limit your exposure to radiation</li>
+                <li>Avoid smoking and excess alcohol consumption</li>
+                <li>Manage stress</li>
+                <li>Get regular check-ups</li>
+            </ul>
+        </div>
+    </div>   
+    </div>
+    
+</body>
+</html>
