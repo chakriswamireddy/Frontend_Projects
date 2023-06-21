@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+    background: linear-gradient(to top,rgba(227, 36, 112, 0.726),rgba(85, 85, 236, 0.712) );
+}
+
+#keypad {
+
+    height: 300px;
+    width: 350px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-auto-rows: 50px;
+    margin-top: 10px;
+    
+}
+
+#calci {
+    background-color: transparent;
+    /* border: 1px solid blue; */
+    box-shadow: 1px 1px 10px rgb(122, 113, 113);
+    border-radius: 5px;
+}
+
+button {
+    
+    background-color: transparent;
+    border:0px solid red;
+    color: white;
+    font-family: 'Tilt Prism', cursive;
+}
+
+button:hover {
+    color:black;
+    font-weight: bold;
+    border: 1px solid transparent;
+    box-shadow: 1px 1px 100px rgba(46, 43, 226, 0.53);
+}
+
+#calculateArea {
+    height: 0.5rem;
+    
+    
+    width: 22rem;
+    text-align: right;
+    padding: 20px 0px;
+    padding-right: 40px;
+    font-size: 30px;
+    margin-top: 5px;
+    padding-bottom: 35px;
+
+    border: 2px solid rgba(45, 48, 45, 0.404) ;
+    text-shadow: 1px 1px 5px rgba(28, 30, 28, 0.79);
+}
+
+#result {
+    height: 1rem;
+    
+    width: 22rem;
+    text-align: right;
+    padding: 20px 0px;
+    padding-right: 40px;
+    font-size: 35px;
+    padding-bottom: 30px;
+    box-shadow: 1px 1px 5px;
+    border: 1px solid  rgba(255, 0, 0, 0.288) ;
+    
+    font-weight: 1000px;
+    text-shadow: 1px 1px 5px rgba(28, 30, 28, 0.79);
+}
+
+h2 {
+    color:rgb(59, 59, 248);
+    text-shadow: 0px 10px 8px;
+    -webkit-text-stroke: 1px ;
+}
+
+.clouds {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: -10vh ;
+    background-color: rgba(255, 255, 255, 0.452);
+    z-index: -1;
+}
+
+#cloud1 {
+    left:10vh;
+    
+    animation: anime1 3s 0s infinite ease-in ;
+}
+
+#cloud2 {
+    left: 50vw;
+    animation: anime1 3s 0.5s infinite ease ;
+}
+
+#cloud3 {
+    right:10vw;
+    animation: anime1 3s 1s infinite ease ;
+}
+
+@keyframes anime1 {
+    0% {bottom: 0vh ;}
+    /* 25% {bottom:30vh;}
+    50% { bottom: 50vh; } */
+    100% {bottom:100vh;}
+    /* 100% {top:0vh;} */
+    
+}
