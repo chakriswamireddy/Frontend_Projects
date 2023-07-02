@@ -1,0 +1,92 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    height: 100vh;
+}
+
+h1 {
+    background: linear-gradient(to right, red,rgba(255, 68, 0, 0.653),rgba(0, 128, 0, 0.452),rgba(0, 128, 0, 0.648),rgba(0, 128, 0, 0.813));
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#container {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(128, 128, 128, 0.523);
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 1px 1px 10px black;
+   
+}
+
+
+#hands {
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    transform: translate(140px,140px);
+    position: relative;
+    border-radius: 50%;
+    z-index: 99;
+
+}
+
+#hands::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+    top:3px;
+    left:3px;
+
+}
+
+
+
+
+#sechand, #minhand, #hourhand {
+    position: absolute;
+    width: 5px;
+    height: 70px;
+    background-color: red;
+    bottom: 5px;
+    left:6px;
+    transform-origin: bottom;
+    border-radius: 10px;
+
+}
+
+#minhand, #hourhand {
+    width: 6px;
+    height: 80px;
+    background-color: black;
+}
+#minhand {
+    background-color: green;
+}
+
+#clock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    position: absolute;
+    inset: 15px;
+    text-align: center;
+    transform: rotate(calc(var(--i) * (360deg / 12)));
+}
+
+span {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 400;
+    transform: rotate(calc(var(--i) * (-360deg / 12)));
+}
