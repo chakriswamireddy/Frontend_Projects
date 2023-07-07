@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(175, 209, 247);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;;
+}
+
+/* @media screen and (max-width: 600px) {
+    .container {
+      grid-template-columns: 10px 400px;
+    }
+  } */
+  
+
+#container {
+    display: grid;
+    grid-template-columns: 25% 75%;
+
+}
+#smallbox{
+    font-family: 'Nunito', sans-serif;
+    background: rgb(92, 156, 229);
+    height: auto;
+    color:white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.288);
+    min-width: 50px;
+    background: url(city-920.jpg);
+
+}
+
+
+
+#smallbox > div:nth-of-type(1) {
+    display: flex;
+    justify-content: space-between;
+    color:white;
+    padding: 10px;
+    flex-wrap: nowrap;
+
+}
+
+#smallbox > div:nth-of-type(1) input {
+    position: relative;
+    z-index: 999;
+    width: 12px;
+
+
+}
+ input::before {
+    position: absolute;
+    content: '';
+    width: 200%;
+    height: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#circle-box {
+    position: relative;
+
+}
+
+#circle {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color:rgb(92, 156, 229);
+    border-radius: 100%;
+    top:20%;
+    left:37%;
+    z-index: 999;
+}
+
+input:checked ~ #circle {
+    transform: rotate(0deg) translate(10px);
+
+}
+
+#region {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+    font-weight: 900;
+}
+
+
+#temp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#temp div {
+    font-size: 20px;
+    margin-right: 20px;
+    font-weight: 60px;
+}
+
+
+#tempc {
+    display: inline-block;
+    color:white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.169);
+    font-size: 90px;
+    padding:10px;
+    margin-top:30px;
+}
+
+#symbol {
+    display: inline-block;
+    color:white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.169);
+    font-size: 90px;
+}
+
+#bigbox {
+    background-color: rgb(228, 241, 255);
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.342);
+}
+
+#intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+    margin: 0px 20px;
+    width: 95%;
+
+
+}
+
+img {
+    border-radius: 10px;
+}
+
+#intro div:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#intro i {
+    align-self: center;
+    justify-self: center;
+
+}
+
+#intro > div> h4 {
+margin-bottom: 0px;
+}
+
+
+
+#graph {
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 95%;
+    box-shadow: 1px 1px 10px gray;
+    height: 40%;
+    min-height:250px;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+button {
+    background-color: gainsboro;
+    border: 0px solid black;
+    border-radius: 10px;
+    padding:5px;
+    font-size: 12px;
+    margin-right: 30px;
+}
+
+table{
+    margin-top:30px;
+    /* border: 2px solid black; */
+    text-align: center;
+    width: 100%;
+
+}
+
+#myChart {
+    background: white;
+    border-radius: 20px;
+
+    max-width: 600px;
+    margin:auto 50px;
+    transform: translateX(-30px);
+
+}
+
+ td > span , td > i {
+    color:rgb(92, 156, 229);
+    background: transparent;
+    
+}
+
+table tr:nth-of-type(1) > td {
+    font-size: small;
+}
+
+table tr:nth-of-type(1) > td:nth-of-type(1) {
+    font-size: small;
+    font-weight: 900;
+}
+
+
+/* more details section */
+
+
+#humidity-bar {
+    display: flex;
+    gap: 1px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: lightgray;
+    position: relative;
+    border-radius: 5px;
+}
+  
+.progress {
+    height: 100%;
+    background-color:rgb(92, 156, 229);
+    border-radius: 5px;
+    position: absolute;
+    left:0;
+    top:0;
+}
+
+#moredetails {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 1fr 1fr;
+    width: 100%;
+    margin-top:10px;
+    grid-gap: 20px;
+}
+
+.morebox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    border-radius: 10px;
+    /* height: 30%;
+    width: 15%; */
+    padding: 15px 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.247);
+}
+
+.morebox > div:nth-of-type(1) {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 900;
+    font-size: small;
+}
+
+.morebox > div:nth-of-type(2){
+    align-self: center;
+    font-weight: 900;
+    margin-bottom: 4px;
+
+}
+
+.morebox > div:nth-of-type(3) {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    flex: 1 1 auto;
+}
+
+#feelsprogress-bar {
+    width: 70%;
+}
+
+#feelsprogress-bar > div, #rainprogress-bar > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#rainprogress-bar {
+    width: 80%;
+}
+#rainprogress-bar label {
+    font-size: 12px;
+    margin:2px;
+}
+
+
+
+.moredetails {
+    position: relative;
+    padding: 10px;
+
+}
+#bigbox > span {
+   
+    display: block;
+    font-weight: 900;
+    font-size: 20px;
+    align-self: flex-start;
+    margin-left: 20px;
+    margin-top: 10px;
+    
+
+}
+
+.morebox > div:nth-of-type(1) > span:nth-of-type(2) , .morebox > div > i {
+    color:white;
+    background-color: rgb(92, 156, 229);
+    border-radius: 5px;
+
+}
+
+
+
+

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <div id="container">
+        <div id="smallbox">
+            <div>
+                
+              <i class="fa fa-plus-square" aria-hidden="true"></i>
+              <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+              <span id="circle-box" >&#176;C <input type="checkbox" name="" id="checkbox" onclick="celToFaren()" ><span id="circle"></span>  &nbsp; &#176; F</span>
+              
+            </div>
+            <div id="region">
+                <div>
+                  <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                  <span>New York,USA</span> <br>
+                    <span>Today 28 sept</span>
+                </div>
+                <div>
+                    <div>
+                      <i class="fa fa-sun-o" aria-hidden="true"></i>
+                        <span>07:19</span>
+                    </div>
+                    <div>
+                      <i class="fa fa-moon-o" aria-hidden="true"></i>
+                        <span>19:32</span>
+                    </div>           
+                </div>
+            </div>
+            <div id="temp">
+                <i class="fa fa-chevron-circle-left" aria-hidden="true"><span id="tempc">27</span><span id="symbol">&#176;</span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></i>
+                <div>
+                    <i class="fa fa-sun-o" aria-hidden="true"></i>
+                    <span>Sunny</span>
+                </div>
+                
+            </div>
+        </div>
+        <div id="bigbox">
+          
+            <div id="intro">
+              
+                <div>
+                    <h4>Welcome Back Isabella</h4>
+                    <span>Check out weather information</span>
+                </div>
+                <div>
+                  <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                  <img src="margot-robbie-harley.jpg" height="40px" width="40px" alt="" >
+                </div>
+
+            </div>
+            <div id="graph">
+              <div id="header">
+                <span><strong>Upcoming Hours</strong></span>
+                <div>
+                  <button>Recipitation <i class="fa fa-angle-down" aria-hidden="true"></i> </button>
+                  <button>Nextdays &gt; </button>
+                </div>
+              </div>
+              
+             
+
+
+              <table>
+                <tr>
+                  <td>Now</td>
+                  <td>11:00</td>
+                  <td>12:00</td>
+                  <td>13:00</td>
+                  <td>14:00</td>
+                  <td>15:00</td>
+                  <td>16:00</td>
+                  <td>17:00</td>
+                </tr>
+                <tr>
+                  <td><span class="material-icons">light_mode</span></td>
+                  <td><span class="material-icons">light_mode</span></td>
+                  <td><i class="fa fa-cloud" aria-hidden="true"></i></td>
+                  <td><i class="fa fa-cloud" aria-hidden="true"></i></td>
+                  <td><span class="material-icons">light_mode</span></td>
+                  <td><i class="fa fa-cloud" aria-hidden="true"></i></td>
+                  <td><i class="fa fa-cloud" aria-hidden="true"></i></td>
+                  <td><span class="material-icons">light_mode</span></td>
+                  
+                </tr>
+                <tr>
+                  <td>27&#176;</td>
+                  <td>28&#176;</td>
+                  <td>28&#176;</td>
+                  <td>29&#176;</td>
+                  <td>30&#176;</td>
+                  <td>29&#176;</td>
+                  <td>29&#176;</td>
+                  <td>28&#176;</td>
+                </tr>
+              </table>
+                <canvas id="myChart"></canvas>
+
+                
+                
+            </div>
+            <span>More Details</span>
+            <div id="moredetails">
+              
+              <div class="morebox">
+                <div>
+                  <span>Humidity</span>
+                  <span class="material-icons">water_drop</span>
+                </div>
+                <div>82% <span>Bad</span></div>
+                <div id="humidity-bar">
+
+                  <div>
+                    <label for="">Good</label>
+                    <div class="progress-bar">
+                      <div class="progress" style="width:100%"></div>
+                    </div>
+                  </div>
+                
+                  <div>
+                   <label for="">normal</label>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 70%"></div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <label for="">bad</label>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 90%"></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="morebox">
+                <div>
+                  <span>Wind</span>
+                  <span class="material-icons">air</span>
+                </div>
+                <div>8 Km/h</div>
+                <div>
+
+                  <div id="rainprogress-bar">
+                    <div>
+                      <label for="">0</label>
+                      <label for="">10</label>
+                      <label for="">20</label>
+                      <label for="">30</label>
+                      <label for="">40</label>
+                    </div>
+                    <div class="progress-bar">
+                      <div class="progress" style="width:20%"></div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="morebox">
+                <div>
+                  <span>Precipitation</span>
+                  <span class="material-icons">umbrella</span>
+                </div>
+                <div>1.4 cm</div>
+                <div id="progress-bars">
+
+                  <div>
+                    <label for="">0</label>
+                    <div class="progress-bar">
+                      <div class="progress" style="width:100%"></div>
+                    </div>
+                  </div>
+                
+                  <div>
+                   <label for="">10</label>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 70%"></div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <label for="">20</label>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 0%"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <label for="">30</label>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 0%"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <label for="">40</label>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 0%"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <label for="">50</label>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 0%"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <label for="">60</label>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 0%"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <label for="">70</label>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 0%"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <label for="">80</label>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 0%"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <label for="">90</label>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 0%"></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="morebox">
+                <div>
+                  <span>UV Index</span>
+                  <span class="material-icons">light_mode</span>
+                </div>
+                <div>4 <span>medium</span></div>
+                <div id="humidity-bar">
+
+                  <div>
+                    <label for="">0-2</label>
+                    <div class="progress-bar">
+                      <div class="progress" style="width:100%"></div>
+                    </div>
+                  </div>
+                
+                  <div>
+                   <label for="">3-5</label>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 60%"></div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <label for="">6-7</label>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 0%"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <label for="">8-10</label>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 0%"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <label for="">11+</label>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 0%"></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="morebox">
+                <div>
+                  <span>Feels like</span>
+                  <span class="material-icons">thermostat</span>
+                </div>
+                <div>30&#176;</div>
+                <div>
+
+                  <div id="feelsprogress-bar">
+                    <div>
+                      <label for="">0&#176;</label>
+                    <label for="">25&#176;</label>
+                    <label for="">50&#176;</label>
+                    </div>
+                    <div class="progress-bar">
+                      <div class="progress" style="width:60%"></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="morebox">
+                <div>
+                  <span>Chance of Rain</span>
+                  <i class="fa fa-umbrella" aria-hidden="true"></i>
+                </div>
+                <div>42%</div>
+                <div>
+
+                  <div id="rainprogress-bar">
+                    <div>
+                      <label for="">0%</label>
+                      <label for="">25%</label>
+                      <label for="">50%</label>
+                      <label for="">75%</label>
+                      <label for="">100%</label>
+                    </div>
+                    <div class="progress-bar">
+                      <div class="progress" style="width:42%"></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+        const xValues = [50,60,70,80,90,100,110,120,130,140,150];
+        const yValues = [23, 29, 58, 75, 33, 20, 73, 49];
+
+        
+        new Chart("myChart", {
+          type: "line",
+          data: {
+            labels: yValues,
+            datasets: [{
+              fill: true,
+              lineTension: 0,
+              backgroundColor: "rgb(92, 156, 229)",
+              borderColor: "rgba(0,0,255,0.1)",
+              data: yValues
+            }]
+          },
+          options: {
+            legend: {display: false},
+            aspectRatio: 7,
+            scales: {
+              xAxes: [{
+                ticks: {min: 6, max: 16},
+                gridLines: {
+                  display: true // Hide X axis grid lines
+                }
+              }],
+              yAxes: [{
+                ticks: {
+                    display:false, // hide yaxis labels
+                    min:0,
+                    max:100
+                },
+                gridLines: {
+                  display: false // Hide Y axis grid lines
+                }
+              }]
+            }
+          }
+        });
+        </script>
+        
+    
+</body>
+</html>
