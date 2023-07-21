@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script
+src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="style2.css">
+
+</head>
+<body>
+    <div class="app">
+    <header>
+        <div id="nav-tools">
+        <nav>
+            <span class="material-icons" id="onlypc1" >flutter_dash</span>
+            <i class="fa fa-search fa-2x " aria-hidden="true"></i>
+
+        </nav>
+        <nav>
+            <i class="fa fa-home fa-2x" aria-hidden="true" class="blue-area" id="blue-home" ></i>
+            <i class="fa fa-newspaper-o fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-list-alt fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i>
+        </nav>
+        </div>
+        <nav>
+            <i class="fa fa-bell-o fa-2x" id="bell-icon"  aria-hidden="true"> <span id="bell-ring">.</span></i>
+            <i class="fa fa-sign-out fa-2x" id="onlypc2"aria-hidden="true"></i>
+        </nav>
+    </header>
+
+    <!-- profile section -->
+    <section id="other-area">
+    <section id="profile-section">
+        <div id="img-area">
+            
+            <img src="Tom-Cruise-0-scaled.jpg" alt="" height="70px" width="70px" style="border-radius: 100%; display: block;">
+            
+            <div>
+            <h4 class="text-bolder">Hi Cruise,</h4>
+            <p>Welcome back.</p>
+            </div>
+
+        </div>
+
+        <div>
+            <p class="text-bold">Today</p>
+            <div>
+                <h4 class="text-bolder">$19,892</h4>
+                <p class="light-text">Account Balance</p>
+            </div>
+            <div>
+                <h4 class="text-bold">$4,000</h4>
+                <p class="light-text">Year-to-Date Contribution</p>
+            </div>
+            <div>
+                <h4 class="text-bold">$1,892</h4>
+                <p class="light-text">Total Interest</p>
+            </div>
+            <div>
+                <button  class="blue-area" > <span>I want to  <i class="fa fa-caret-down" aria-hidden="true"></i> </span> </button>
+            </div>
+
+        </div>
+        <div>
+            <h5 >Recent Transactions</h5>
+            <ul style="list-style: none;">
+                <li>
+                    <p class="light-text">2020-08-07</p>
+                    <h4>Withdrawal Transfer to Bank-XXX11</h4>
+                </li>
+                <li>
+                    <p class="light-text">2020-08-21</p>
+                    <h4>Withdrawal Transfer to Bank-XXX11</h4>
+                </li>
+                <li>
+                    <p class="light-text">2020-08-16</p>
+                    <h4>Withdrawal Transfer to Bank-XXX11</h4>
+                </li>
+            </ul>
+        </div>
+    </section >
+
+    <section id="block2">
+        <div>
+            <h6 >Retirement Income</h6>
+            <h2 class="text-bold">Starting Year 2056</h2>
+        </div>
+        <div id="goal-box">
+            <div>
+                <h4 class="text-bolder">$300,00</h4>
+                <p class="light-text">My Goal</p>
+                <span></span>
+            </div>
+            <div>
+                <h4 class="text-bolder">59%</h4>
+                <p class="light-text">Goal Achieved</p>
+                <span></span>
+            </div>
+            <div>
+                <h4 class="text-bolder">$300</h4>
+                <p class="light-text">Est. Monthly Income</p>
+                <span></span>
+            </div>
+        </div>
+
+        <div>
+            <h5 class="text-bold">Contributions Overtime</h5>
+            <!-- <canvas id="myChart"></canvas> -->
+            <canvas id="myChart"></canvas>
+            
+            
+        </div>
+
+        <div id="bigpeers">
+            <h5 class="text-bold">How do I compare to my peers ?</h5>
+            <p class="light-text">These numbers represent current goal achievemnt</p>
+            <div id="peers" >
+                <div id="dropdown-area">
+                    <div>
+                        <span class="dropdown-text">Age:</span>
+                            <select name="" id="">
+                                <option value=""> under 30 </option>
+                                <option value=""> under 40 </option>
+                                <option value=""> under 50 </option>
+                            </select>
+                    </div>
+                    <div>
+                        <span class="dropdown-text">Salary: </span>
+                            <select name="" id="">
+                                <option value="">K 20 - K 30</option>
+                                <option value="">K 30 - K 40</option>
+                                <option value="">K 40 - K 50</option>
+                            </select>
+                    </div>
+                    <div>
+                        <span class="dropdown-text">Gender:  </span>
+                            <select name="" id="">
+                       <option value="">Male</option>
+                       <option value="">Female</option>
+                    </select>
+                    
+                    </div>
+
+                </div>
+                <div id="progress-area">
+                    <div>
+                        <div class="circle-wrap">
+                            <div class="circle">
+                              <div class="mask full">
+                                <div class="fill"></div>
+                              </div>
+                              <div class="mask half">
+                                <div class="fill"></div>
+                              </div>
+                              <div class="inside-circle"> 78% </div>
+                            </div>
+                          </div>
+                       <span>Average</span>
+                    </div>
+                    <div>
+                        
+                        <div class="circle-wrap">
+                            <div class="circle">
+                              <div class="mask full" id="maskfull2">
+                                <div class="fill" id="fill2"></div>
+                              </div>
+                              <div class="mask half">
+                                <div class="fill" id="fill2"></div>
+                              </div>
+                              <div class="inside-circle"> 95% </div>
+                            </div>
+                          </div>
+
+                        <span>Top</span>
+                    </div>
+                    <div>
+                        
+                        <div class="circle-wrap">
+                            <div class="circle">
+                              <div class="mask full" id="maskfull3">
+                                <div class="fill" id="fill3"></div>
+                              </div>
+                              <div class="mask half">
+                                <div class="fill" id="fill3"></div>
+                              </div>
+                              <div class="inside-circle"> 59% </div>
+                            </div>
+                          </div>
+
+                        <span>Me</span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="block3">
+        <div id="strategy-block">
+            <h3 class="text-bold">Retirement Strategy</h3>
+            <div>
+                <div class="slidecontainer">Employer Contribution</div>
+                <input type="range" name="emp-bar" id="emp-bar" class="slider"  value="12" min="0" max="20">
+                <span id="emp-val">12%</span>
+            </div> 
+
+            <div class="slidecontainer">
+               
+                <div  >Retirement Age</div>
+            <input type="range" name="age-bar" id="age-bar" class="slider" value="65" min="0" max="80">
+            <span  id="age-val">65</span>
+            <span class="line"></span>
+
+            </div>
+            <div>
+
+                <span>Employer Contribution</span>
+                <span>8.4%</span>
+            </div>
+            <div>
+                
+                <span>Interest Rate</span>
+                <span>5%</span>
+            </div>
+            <div id="">
+                <button id="update-btn">Update</button>
+            </div>
+
+            <div>
+                <a href=""  style="text-decoration: none;">View Help Docs <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+            </div>
+
+        </div>
+        <div id="support-area">
+            <h5>Are you Considering</h5>
+            <strong class="text-bold">Housing Advance ?</strong>
+            <p class="light-text">Limited time Reduced Interest.</p>
+           
+            <a href="" style="text-decoration: none;">Learn More  <i class="fa fa-caret-right" aria-hidden="true"></i> </a>
+        </div>
+
+    </section>
+        
+    </section>
+    </div>
+
+    <script src="chartjs.js"></script>
+    <script src="script1.js"></script>
+</body>
+</html>

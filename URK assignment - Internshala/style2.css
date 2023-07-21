@@ -1,0 +1,177 @@
+
+
+
+#block3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(243, 239, 239, 0.701);
+    border-radius: 20px;
+}
+
+#strategy-block {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
+    
+    padding-top: 10px;
+    width: 80%;
+
+}
+
+#strategy-block > div > div {
+
+    margin-bottom: 5px;
+}
+
+#strategy-block > div {
+    padding: 10px ;
+    
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+#strategy-block div:nth-last-child(2), #strategy-block div:nth-last-child(1) {
+    align-self: center;
+    width: 60%;
+    text-align: center;
+}
+
+#strategy-block  button {
+    width: 100%;
+    
+
+    height: 40px;
+    border-radius: 5px;
+    background: rgb(18, 18, 232);
+    color:rgb(201, 196, 196);
+    border: none;
+
+}
+
+#strategy-block div:nth-child(4),#strategy-block div:nth-child(5) {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+.slidecontainer {
+    width: 80%;
+    border-radius: 10px;
+
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 80%;
+    height: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background:  #3846e7;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #3846e7;
+    cursor: pointer;
+  }
+
+.line {
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background: gray;
+
+
+}
+
+#support-area {
+
+    width: 90%;
+    margin-top:50px;
+    border-left:3px solid rgb(32, 32, 237);
+    padding-left: 20px;
+    padding-top: 0px;
+}
+
+/* font styling */
+
+.light-text {
+    color:gray;
+    font-size:15px;
+}
+/* 
+#profile-section  .light-text {
+    color:green;
+    margin-top: 0px;
+} */
+
+ h4 {
+
+    margin:0px;
+}
+
+#block2 h4{
+    margin-bottom:5px;
+}
+.text-bolder {
+    color:black;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.text-bold {
+    font-weight: 700;
+    font-size: 18px;
+    margin-top:3px;
+    
+}
+
+#block2 .text-bold {
+    margin: 10px;
+}
+
+#block2 h6 {
+    font-size: 18px;
+    margin: 5px;
+    color:rgb(28, 28, 237);
+    font-weight: 700;
+}
+
+
+
+.slidecontainer ,#strategy-block span {
+    font-weight: 700;
+    font-size: 13px;
+
+}
+
+#block3 a{
+    color:blue;
+
+}
+
